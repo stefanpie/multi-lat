@@ -14,10 +14,10 @@ A = [0,0];
 B = [0,1];
 C = [1,1];
 D = [1,0];
-E = [.5, .5];
+E = [7.5, 18.2];
 F = [.2, .8];
 
-sensors = [A;B;C;D];
+sensors = [A;B;C;D;E];
 
 % Define the speed of sound in the material used (in m/s)
 
@@ -25,7 +25,7 @@ s = 4000;
 
 % Define tap postion for simulation (in m)
 
-tap = [.46, .73];
+tap = [.5, .32];
 
 % Define simulated time delta for each sensor using tap location
 
@@ -35,7 +35,7 @@ for i = 1:length(sensors)
 end
 time_deltas = distances./s;
 
-
+time_deltas = time_deltas;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Numerical Method for Successive Iterations of Monte Carlo
